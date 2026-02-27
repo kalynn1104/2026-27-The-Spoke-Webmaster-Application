@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRESSCRAFT ACADEMY</title>
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/main.js"></script>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">PRESSCRAFT</div>
+    <nav>
+        <a href="modules.html">Modules</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="community.html">Community</a>
+        <button id="themeToggle">🌙</button>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1 id="typing"></h1>
+    <p>Master journalism. Write boldly. Shape the truth.</p>
+    <div class="cta">
+        <a href="modules.html" class="btn primary">Start Learning</a>
+        <a href="editor.html" class="btn outline">Write Your First Story</a>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stat"><h2 class="counter" data-target="12450">0</h2><p>Students</p></div>
+    <div class="stat"><h2 class="counter" data-target="3890">0</h2><p>Articles Published</p></div>
+    <div class="stat"><h2 class="counter" data-target="21300">0</h2><p>Peer Reviews</p></div>
+</section>
+
+<section class="featured-articles">
+    <h2>Featured Articles</h2>
+    <div class="articles-grid">
+        <article class="card">
+            <img src="images/article1.jpg" alt="Investigative Journalism">
+            <h3>Uncovering Hidden Stories</h3>
+            <p class="category">Investigative</p>
+            <span class="read-time">7 min read</span>
+        </article>
+        <article class="card">
+            <img src="images/article2.jpg" alt="Media Law">
+            <h3>Understanding Media Law</h3>
+            <p class="category">Law</p>
+            <span class="read-time">5 min read</span>
+        </article>
+        <article class="card">
+            <img src="images/article3.jpg" alt="Interview Techniques">
+            <h3>Mastering Interviews</h3>
+            <p class="category">Techniques</p>
+            <span class="read-time">6 min read</span>
+        </article>
+    </div>
+</section>
+
+<section class="learning-path">
+    <h2>Learning Path</h2>
+    <div class="modules-grid">
+        <div class="module-card">Journalism Ethics</div>
+        <div class="module-card">Investigative Reporting</div>
+        <div class="module-card">Interview Techniques</div>
+        <div class="module-card">Fact-Checking</div>
+        <div class="module-card">News Writing Structure</div>
+        <div class="module-card">Media Law Basics</div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>What Students Say</h2>
+    <div class="carousel">
+        <div class="testimonial">“PRESSCRAFT helped me write my first published article.” – Jane D.</div>
+        <div class="testimonial">“The modules made investigative journalism clear and exciting.” – Alex K.</div>
+        <div class="testimonial">“I improved my writing and my confidence.” – Sam R.</div>
+    </div>
+</section>
+
+<footer>
+    <div class="newsletter">
+        <h3>Subscribe to Updates</h3>
+        <form id="newsletterForm">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    <p>© 2026 PRESSCRAFT ACADEMY</p>
+</footer>
+
+<div id="toast-container"></div>
+<button id="backToTop">↑</button>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard - PRESSCRAFT ACADEMY</title>
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/main.js"></script>
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">PRESSCRAFT</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="modules.html">Modules</a>
+        <a href="community.html">Community</a>
+        <button id="themeToggle">🌙</button>
+    </nav>
+</header>
+
+<section class="dashboard-hero">
+    <h1>Welcome, <span id="username">Student</span>!</h1>
+    <p>Level: <span id="level">Intern</span> | XP: <span id="xp">0</span></p>
+    <div class="xp-bar"><div id="xpProgress"></div></div>
+</section>
+
+<section class="weekly-challenge">
+    <h2>Weekly Challenge</h2>
+    <p id="challengeCountdown"></p>
+    <button>Participate</button>
+</section>
+
+<section class="achievements">
+    <h2>Achievements</h2>
+    <div class="achievements-grid">
+        <!-- Badges will be rendered here -->
+    </div>
+</section>
+
+<section class="notifications">
+    <h2>Recent Notifications</h2>
+    <ul id="notificationsList">
+        <!-- Dynamic notifications here -->
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 PRESSCRAFT ACADEMY</p>
+</footer>
+
+<div id="toast-container"></div>
+<button id="backToTop">↑</button>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modules - PRESSCRAFT ACADEMY</title>
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/main.js"></script>
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">PRESSCRAFT</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="community.html">Community</a>
+        <button id="themeToggle">🌙</button>
+    </nav>
+</header>
+
+<section class="modules-list">
+    <h1>Learning Modules</h1>
+    <div class="module-accordion">
+        <div class="module">
+            <button class="accordion">Journalism Ethics</button>
+            <div class="panel">
+                <p>Content for Journalism Ethics module...</p>
+                <button class="mark-complete">Mark Complete</button>
+            </div>
+        </div>
+        <div class="module">
+            <button class="accordion">Investigative Reporting</button>
+            <div class="panel">
+                <p>Content for Investigative Reporting module...</p>
+                <button class="mark-complete">Mark Complete</button>
+            </div>
+        </div>
+        <!-- Add other modules similarly -->
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 PRESSCRAFT ACADEMY</p>
+</footer>
+<div id="toast-container"></div>
+<button id="backToTop">↑</button>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz - PRESSCRAFT ACADEMY</title>
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/main.js"></script>
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">PRESSCRAFT</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="modules.html">Modules</a>
+        <a href="dashboard.html">Dashboard</a>
+        <button id="themeToggle">🌙</button>
+    </nav>
+</header>
+
+<section class="quiz-section">
+    <h1>Journalism Quiz</h1>
+    <div class="quiz-box">
+        <p id="question">Question text...</p>
+        <div id="answers"></div>
+        <button id="nextQuestion">Next</button>
+        <p id="score"></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 PRESSCRAFT ACADEMY</p>
+</footer>
+
+<div id="toast-container"></div>
+<button id="backToTop">↑</button>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editor - PRESSCRAFT ACADEMY</title>
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/main.js"></script>
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">PRESSCRAFT</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="modules.html">Modules</a>
+        <a href="dashboard.html">Dashboard</a>
+        <button id="themeToggle">🌙</button>
+    </nav>
+</header>
+
+<section class="editor-section">
+    <h1>Write Your Article</h1>
+    <div class="editor-toolbar">
+        <button data-command="bold">B</button>
+        <button data-command="italic">I</button>
+        <button data-command="heading">H1</button>
+        <button data-command="quote">"</button>
+    </div>
+    <div id="editor" contenteditable="true"></div>
+    <div class="editor-meta">
+        <span id="wordCount">Words: 0</span>
+        <span id="readingTime">Reading time: 0 min</span>
+        <button id="publishArticle">Publish</button>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 PRESSCRAFT ACADEMY</p>
+</footer>
+
+<div id="toast-container"></div>
+<button id="backToTop">↑</button>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community - PRESSCRAFT ACADEMY</title>
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/main.js"></script>
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">PRESSCRAFT</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="modules.html">Modules</a>
+        <a href="dashboard.html">Dashboard</a>
+        <button id="themeToggle">🌙</button>
+    </nav>
+</header>
+
+<section class="community-feed">
+    <h1>Community Articles</h1>
+    <div class="article-feed">
+        <!-- Dynamic feed articles -->
+    </div>
+    <div class="filters">
+        <input type="text" placeholder="Search articles..." id="communitySearch">
+        <select id="categoryFilter">
+            <option value="all">All Categories</option>
+            <option value="investigative">Investigative</option>
+            <option value="ethics">Ethics</option>
+            <option value="techniques">Techniques</option>
+        </select>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 PRESSCRAFT ACADEMY</p>
+</footer>
+<div id="toast-container"></div>
+<button id="backToTop">↑</button>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile - PRESSCRAFT ACADEMY</title>
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/main.js"></script>
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">PRESSCRAFT</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="modules.html">Modules</a>
+        <a href="dashboard.html">Dashboard</a>
+        <button id="themeToggle">🌙</button>
+    </nav>
+</header>
+
+<section class="profile-section">
+    <div class="profile-header">
+        <img src="images/default-profile.png" alt="Profile Picture" id="profilePic">
+        <h1 id="profileName">Student Name</h1>
+        <p id="profileBio">Aspiring journalist passionate about investigative reporting.</p>
+    </div>
+    <section class="profile-stats">
+        <p>Total XP: <span id="profileXP">0</span></p>
+        <p>Level: <span id="profileLevel">Intern</span></p>
+    </section>
+    <section class="profile-portfolio">
+        <h2>Published Articles</h2>
+        <div class="articles-grid">
+            <!-- User articles here -->
+        </div>
+    </section>
+</section>
+
+<footer>
+    <p>© 2026 PRESSCRAFT ACADEMY</p>
+</footer>
+
+<div id="toast-container"></div>
+<button id="backToTop">↑</button>
+</body>
+</html>
