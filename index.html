@@ -1,139 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PRESSCRAFT ACADEMY</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/main.js"></script>
+  <meta charset="UTF-8" />
+  <title>What Kind of Journalist Are You?</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Preloader -->
-  <div id="preloader"><div class="loader"></div></div>
-
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">PRESSCRAFT</div>
+  <header>
+    <h1>What Kind of Journalist Are You?</h1>
     <nav>
-      <a href="#hero">Home</a>
-      <a href="#modules">Modules</a>
-      <a href="#articles">Articles</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#newsletter">Subscribe</a>
-      <button id="themeToggle">🌙</button>
+      <a href="#what-is-journalism">What is Journalism?</a>
+      <a href="#types">Types of Journalists</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#opportunities">Opportunities</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
-    <h1 id="typing"></h1>
-    <p>Learn, write, and get peer-reviewed by fellow journalists.</p>
-    <div class="cta">
-      <a href="modules.html" class="btn primary">Start Learning</a>
-      <a href="editor.html" class="btn outline">Write Your First Story</a>
-    </div>
-  </section>
+  <!-- 1) What is journalism -->
+  <section id="what-is-journalism" class="section fade-in">
+    <h2>What is Journalism?</h2>
+    <p>
+      Journalism is the job of finding information, checking if it’s true, and sharing it with the public. It helps people understand what’s happening in the world so they can make smart decisions.
+    </p>
 
-  <!-- Stats Section -->
-  <section class="stats">
-    <div class="stat">
-      <h2 class="counter" data-target="12450">0</h2>
-      <p>Students</p>
+    <div class="pill-row">
+      <span class="pill">Being correct</span>
+      <span class="pill">Being fair</span>
+      <span class="pill">Thinking for yourself</span>
+      <span class="pill">Helping the community</span>
     </div>
-    <div class="stat">
-      <h2 class="counter" data-target="3890">0</h2>
-      <p>Articles Published</p>
-    </div>
-    <div class="stat">
-      <h2 class="counter" data-target="21300">0</h2>
-      <p>Peer Reviews</p>
-    </div>
-  </section>
 
-  <!-- Featured Articles -->
-  <section id="articles" class="featured-articles">
-    <h2>Featured Articles</h2>
-    <div class="articles-grid">
-      <div class="card">
-        <img src="https://source.unsplash.com/400x250/?news" alt="Article 1">
-        <h3>Investigating the Hidden Economy</h3>
-        <p class="category">Investigative</p>
-        <p class="read-time">5 min read</p>
+    <div class="timeline">
+      <h3>How Journalism Changed Over Time</h3>
+
+      <div class="timeline-item">
+        <span class="year">1600s</span>
+        <p>Some of the first printed newspapers started appearing in Europe.</p>
       </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x250/?journalist" alt="Article 2">
-        <h3>Interview Techniques That Work</h3>
-        <p class="category">Interviews</p>
-        <p class="read-time">4 min read</p>
+
+      <div class="timeline-item">
+        <span class="year">1900s</span>
+        <p>Radio and TV let people hear and watch news right in their homes.</p>
       </div>
-      <div class="card">
-        <img src="https://source.unsplash.com/400x250/?media" alt="Article 3">
-        <h3>Fact-Checking in the Digital Age</h3>
-        <p class="category">Ethics</p>
-        <p class="read-time">6 min read</p>
+
+      <div class="timeline-item">
+        <span class="year">2000s</span>
+        <p>The internet and social media changed how news is made and how people get it.</p>
       </div>
     </div>
   </section>
 
-  <!-- Learning Path Modules -->
-  <section id="modules" class="modules-grid">
-    <div class="module-card module">
-      <h3 class="accordion">Journalism Ethics</h3>
-      <div class="panel">
-        <p>Learn how to report with integrity and accuracy.</p>
-        <button class="mark-complete">Mark as Complete</button>
+  <!-- 2) Types of journalists -->
+  <section id="types" class="section fade-in">
+    <h2>Types of Journalists</h2>
+    <p>Click a card to learn more about each type of journalist.</p>
+
+    <div class="card-grid">
+      <div class="card" data-role="Investigative Journalist">
+        <h3>Investigative Journalist</h3>
+        <p>Looks into hidden problems, big issues, and things people try to cover up.</p>
+        <button class="more-btn">More</button>
+      </div>
+
+      <div class="card" data-role="News Reporter">
+        <h3>News Reporter</h3>
+        <p>Reports on breaking news and everyday events, usually very quickly.</p>
+        <button class="more-btn">More</button>
+      </div>
+
+      <div class="card" data-role="Feature Writer">
+        <h3>Feature Writer</h3>
+        <p>Writes longer stories about people and their experiences.</p>
+        <button class="more-btn">More</button>
+      </div>
+
+      <div class="card" data-role="Photojournalist">
+        <h3>Photojournalist</h3>
+        <p>Tells stories through strong and meaningful photos.</p>
+        <button class="more-btn">More</button>
+      </div>
+
+      <div class="card" data-role="Broadcast Journalist">
+        <h3>Broadcast Journalist</h3>
+        <p>Shares news on TV or radio and speaks clearly to an audience.</p>
+        <button class="more-btn">More</button>
+      </div>
+
+      <div class="card" data-role="Data Journalist">
+        <h3>Data Journalist</h3>
+        <p>Uses charts, numbers, and patterns to explain what’s going on.</p>
+        <button class="more-btn">More</button>
       </div>
     </div>
-    <div class="module-card module">
-      <h3 class="accordion">Investigative Reporting</h3>
-      <div class="panel">
-        <p>Master investigative techniques and research methods.</p>
-        <button class="mark-complete">Mark as Complete</button>
-      </div>
-    </div>
-    <div class="module-card module">
-      <h3 class="accordion">Interview Techniques</h3>
-      <div class="panel">
-        <p>Learn to ask the right questions and get the best answers.</p>
-        <button class="mark-complete">Mark as Complete</button>
-      </div>
+
+    <div id="role-details" class="role-details hidden">
+      <h3 id="role-title"></h3>
+      <p id="role-text"></p>
+      <ul id="role-traits"></ul>
     </div>
   </section>
 
-  <!-- Testimonials Carousel -->
-  <section id="testimonials" class="carousel">
-    <div class="testimonial">
-      <p>"PRESSCRAFT transformed my writing skills!"</p>
-      <strong>- Alex R.</strong>
-    </div>
-    <div class="testimonial">
-      <p>"The peer review system is amazing!"</p>
-      <strong>- Sam K.</strong>
-    </div>
-    <div class="testimonial">
-      <p>"I feel like a real journalist now."</p>
-      <strong>- Jamie L.</strong>
+  <!-- 3) Quiz -->
+  <section id="quiz" class="section fade-in">
+    <h2>Quiz: What Type of Journalist Are You?</h2>
+    <p>Answer the questions below to see which journalism path fits you best.</p>
+
+    <form id="quiz-form">
+
+      <div class="question">
+        <h3>1. When something confusing happens, what’s your first move?</h3>
+        <label><input type="radio" name="q1" value="investigative" /> Dig until you understand everything.</label>
+        <label><input type="radio" name="q1" value="feature" /> Think about the people involved.</label>
+        <label><input type="radio" name="q1" value="photo" /> Try to capture the moment visually.</label>
+        <label><input type="radio" name="q1" value="data" /> Look for patterns in numbers.</label>
+      </div>
+
+      <div class="question">
+        <h3>2. What kind of work setting sounds the most interesting to you?</h3>
+        <label><input type="radio" name="q2" value="news" /> A fast-moving newsroom.</label>
+        <label><input type="radio" name="q2" value="investigative" /> A quiet place to research.</label>
+        <label><input type="radio" name="q2" value="broadcast" /> A studio with cameras and lights.</label>
+        <label><input type="radio" name="q2" value="photo" /> Being out in the field with a camera.</label>
+      </div>
+
+      <div class="question">
+        <h3>3. What skill feels the most natural for you?</h3>
+        <label><input type="radio" name="q3" value="broadcast" /> Speaking clearly and confidently.</label>
+        <label><input type="radio" name="q3" value="feature" /> Writing detailed, emotional stories.</label>
+        <label><input type="radio" name="q3" value="data" /> Understanding charts and numbers.</label>
+        <label><input type="radio" name="q3" value="news" /> Explaining events quickly and clearly.</label>
+      </div>
+
+      <div class="question">
+        <h3>4. What pushes you to want to tell a story?</h3>
+        <label><input type="radio" name="q4" value="investigative" /> Wanting to uncover the truth.</label>
+        <label><input type="radio" name="q4" value="feature" /> Wanting people to feel understood.</label>
+        <label><input type="radio" name="q4" value="photo" /> Wanting to show real moments.</label>
+        <label><input type="radio" name="q4" value="data" /> Wanting to explain patterns others miss.</label>
+      </div>
+
+      <button type="submit" class="primary-btn">Get My Result</button>
+      <button type="button" id="reset-quiz" class="secondary-btn">Reset</button>
+    </form>
+
+    <div id="quiz-result" class="quiz-result hidden">
+      <h3>Your Journalism Match:</h3>
+      <p id="result-title"></p>
+      <p id="result-description"></p>
     </div>
   </section>
 
-  <!-- Newsletter / Footer -->
-  <footer id="newsletter">
-    <h3>Subscribe to our Newsletter</h3>
-    <div class="newsletter">
-      <form>
-        <input type="email" placeholder="Your Email" required>
-        <button type="submit">Subscribe</button>
-      </form>
+  <!-- 4) Opportunities -->
+  <section id="opportunities" class="section fade-in">
+    <h2>Explore Journalism Opportunities</h2>
+
+    <div class="op-grid">
+      <div class="op-block">
+        <h3>Education & Training</h3>
+        <ul>
+          <li>Classes or degrees in journalism or communications</li>
+          <li>School newspapers, TV, or radio clubs</li>
+          <li>Online lessons or workshops</li>
+        </ul>
+      </div>
+
+      <div class="op-block">
+        <h3>Career Paths</h3>
+        <ul>
+          <li>Newsrooms in your town or across the country</li>
+          <li>Magazines and online news sites</li>
+          <li>Television and radio stations</li>
+          <li>Working on your own as a writer or reporter</li>
+        </ul>
+      </div>
+
+      <div class="op-block">
+        <h3>Skills to Build</h3>
+        <ul>
+          <li>Writing and editing</li>
+          <li>Interviewing and researching</li>
+          <li>Making videos and other media</li>
+          <li>Understanding data and making charts</li>
+        </ul>
+      </div>
+
+      <div class="op-block">
+        <h3>Tools to Explore</h3>
+        <ul>
+          <li>Websites like WordPress</li>
+          <li>Photo and video editing tools</li>
+          <li>Spreadsheets and data programs</li>
+        </ul>
+      </div>
     </div>
-    <p>&copy; 2026 PRESSCRAFT ACADEMY. All rights reserved.</p>
+
+    <div class="path-helper">
+      <h3>Based on Your Quiz Result</h3>
+      <p id="path-text">Take the quiz to see personalized suggestions here.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Created for future journalists — explore, learn, and find your path.</p>
   </footer>
 
-  <!-- Toast notifications container -->
-  <div id="toast-container"></div>
-
-  <!-- Back to Top Button -->
-  <button id="backToTop">↑</button>
-
+  <script src="script.js"></script>
 </body>
 </html>
+
+
